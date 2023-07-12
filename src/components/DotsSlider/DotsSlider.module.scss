@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+}
+
+.dot {
+  display: flex;
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+  background-color: rgb(189, 189, 189);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &Selected {
+    width: 24px;
+    background-color: rgb(119, 177, 247);
+  }
+}
